@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talent Acquisition Portfolio — Arslan Khan | aPHRi™ | CHRP®</title>
+<meta name="description" content="Talent Acquisition Portfolio of Arslan Khan (aPHRi™, CHRP®): technical hiring playbooks, builder-first sourcing, structured assessment, an AI-enabled TA Copilot prototype, recruitment metrics and a 30/60/90 plan for ImagineArt.">
+<style>
+:root{
+  --bg:#060A16; --panel:#0C1330; --panel2:#111A3A; --line:rgba(150,165,255,.14); --line2:rgba(150,165,255,.26);
+  --text:#E8ECFF; --muted:#A3ACD0; --dim:#7680A8;
+  --blue:#5B8CFF; --blue2:#3D6BF0; --violet:#A78BFA; --violet2:#7C5CF0; --cyan:#5EE1F5; --amber:#F5C46B; --green:#4ADE9A; --red:#FF8A8A;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Inter Display","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 85% -10%,rgba(124,92,240,.18),transparent 60%),radial-gradient(900px 500px at -10% 20%,rgba(61,107,240,.14),transparent 60%)}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:rgba(6,10,22,.78);border-bottom:1px solid var(--line)}
+nav.top .in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:12px 20px}
+nav.top .brand{font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+nav.top .brand span{color:var(--muted);font-weight:500}
+nav.top .links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+nav.top .links::-webkit-scrollbar{display:none}
+nav.top .links a{color:var(--muted);font-size:13px;padding:6px 10px;border-radius:8px;white-space:nowrap}
+nav.top .links a:hover{background:rgba(255,255,255,.06);color:var(--text);text-decoration:none}
+main{max-width:1280px;margin:0 auto;padding:28px 20px 40px}
+/* slides */
+.slide{position:relative;background:linear-gradient(180deg,rgba(17,26,58,.92),rgba(10,15,36,.96));border:1px solid var(--line);border-radius:24px;padding:48px 56px 56px;margin:0 0 28px;overflow:hidden;scroll-margin-top:70px}
+.slide::after{content:attr(data-page);position:absolute;right:28px;bottom:18px;font-size:11px;color:var(--dim);letter-spacing:.08em}
+.slide::before{content:"Arslan Khan · Talent Acquisition Portfolio";position:absolute;left:56px;bottom:18px;font-size:11px;color:var(--dim);letter-spacing:.04em}
+.slide.cover::before,.slide.cover::after{display:none}
+.eyebrow{font-weight:600;font-size:12px;letter-spacing:.16em;color:var(--blue);text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.eyebrow .n{display:inline-grid;place-items:center;min-width:28px;height:22px;padding:0 6px;border-radius:6px;background:linear-gradient(135deg,var(--blue2),var(--violet2));color:#fff;font-size:11px;letter-spacing:.04em}
+h1,h2,h3,h4{margin:0;letter-spacing:-.02em}
+h2{font-size:32px;line-height:1.15;font-weight:700;margin:10px 0 8px}
+h3{font-size:16px;font-weight:650;letter-spacing:-.01em}
+h4{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);font-size:15.5px;max-width:980px;margin:0 0 22px}
+.grad{background:linear-gradient(90deg,#8FB0FF,#C4B2FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.muted{color:var(--muted)} .dim{color:var(--dim)} .small{font-size:12.5px} .xs{font-size:11.5px}
+.g{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g5{grid-template-columns:repeat(5,1fr)}
+.card{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card.hi{background:linear-gradient(160deg,rgba(91,140,255,.14),rgba(167,139,250,.08));border-color:var(--line2)}
+.card h3{margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:13.5px}
+ul.l{margin:0;padding-left:18px;color:var(--muted);font-size:13.5px}
+ul.l li{margin:2px 0}
+ul.l li::marker{color:var(--blue)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);background:rgba(255,255,255,.03);white-space:nowrap}
+.illus{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.04em;padding:4px 10px;border-radius:999px;color:var(--amber);background:rgba(245,196,107,.1);border:1px solid rgba(245,196,107,.35)}
+.proto{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;padding:6px 12px;border-radius:10px;color:#D9CCFF;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.4)}
+.ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(91,140,255,.25),rgba(167,139,250,.25));border:1px solid var(--line2);flex:none}
+.ico svg{width:18px;height:18px;stroke:#CFDBFF;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.row{display:flex;gap:12px;align-items:flex-start}
+.tw{overflow-x:auto}
+table.t{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;line-height:1.4}
+table.t th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);padding:8px 10px;border-bottom:1px solid var(--line2);white-space:nowrap}
+table.t td{padding:7px 10px;border-bottom:1px solid var(--line);color:var(--muted);vertical-align:top}
+table.t td:first-child{color:var(--text);font-weight:600}
+table.t tr:last-child td{border-bottom:none}
+code,.mono{font-family:"JetBrains Mono","SFMono-Regular",Consolas,Menlo,monospace;font-size:12px}
+.code{font-family:"JetBrains Mono","SFMono-Regular",Consolas,Menlo,monospace;font-size:11.5px;line-height:1.55;background:#070C1E;border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:#CFE0FF;white-space:pre-wrap;word-break:break-word}
+.code .k{color:#C4B2FF}.code .s{color:#8FE3C0}.code .c{color:var(--dim)}
+.quote{font-size:21px;line-height:1.4;font-weight:500;letter-spacing:-.01em}
+.note{font-size:11.5px;color:var(--dim);margin-top:10px}
+.foot-note{position:absolute;left:56px;right:56px;bottom:38px;font-size:11px;color:var(--dim)}
+/* cover */
+.cover{min-height:640px;display:grid;grid-template-columns:1.25fr 1fr;gap:30px;align-items:center;padding:64px}
+.cover h1{font-size:58px;line-height:1.02;font-weight:800;letter-spacing:-.035em;margin:18px 0 14px}
+.cover .sub{font-size:19px;color:#C9D2F5;max-width:640px;margin:0 0 26px}
+.cover .by{font-size:15px;color:var(--muted)} .cover .by b{color:var(--text)}
+.toc{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:26px;max-width:620px}
+.toc div{font-size:13px;color:var(--muted);padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.025)}
+.toc div b{color:var(--text);font-weight:600}
+/* lifecycle */
+.phases{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.phase{border:1px solid var(--line);border-radius:16px;padding:14px;background:rgba(255,255,255,.03);position:relative}
+.phase .ph{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.phase h3{font-size:18px;margin-bottom:10px}
+.step{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:#D3D9F5;padding:6px 0;border-top:1px dashed var(--line)}
+.step i{font-style:normal;flex:none;width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:11px;font-weight:700;background:rgba(91,140,255,.18);color:#BFD0FF}
+.phase .out{margin-top:8px;font-size:11.5px;color:var(--dim)}
+.phase .out b{color:var(--muted)}
+.arrow-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:10px 0 0}
+.arrow-row div{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--blue2),var(--violet2))}
+/* flow */
+.flow{display:flex;gap:8px;align-items:stretch}
+.flow .fs{flex:1;border:1px solid var(--line2);border-radius:14px;padding:12px;background:rgba(255,255,255,.035);position:relative}
+.flow .fs b{display:block;font-size:13px;margin-bottom:3px}
+.flow .fs span{font-size:11.5px;color:var(--muted);display:block;line-height:1.35}
+.flow .fs.human{border-color:rgba(74,222,154,.5);background:rgba(74,222,154,.07)}
+.flow .fs.ai{border-color:rgba(167,139,250,.5);background:rgba(167,139,250,.08)}
+.flow .ar{display:grid;place-items:center;color:var(--dim);font-size:16px;flex:none}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+/* kpis */
+.kpi{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:rgba(255,255,255,.03)}
+.kpi .v{font-size:26px;font-weight:700;letter-spacing:-.02em}
+.kpi .k{font-size:11.5px;color:var(--muted)}
+.kpi .d{font-size:11px;color:var(--dim)}
+.bar{display:grid;grid-template-columns:150px 1fr 48px;gap:10px;align-items:center;font-size:12px;color:var(--muted);margin:5px 0}
+.bar .tr{height:14px;background:rgba(255,255,255,.04);border-radius:4px;overflow:hidden}
+.bar .fl{height:100%;background:var(--blue);border-radius:0 4px 4px 0}
+.bar .val{color:var(--text);font-weight:600;text-align:right}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;position:relative}
+.tl .it{border-top:2px solid var(--line2);padding-top:10px;position:relative}
+.tl .it::before{content:"";position:absolute;top:-6px;left:0;width:10px;height:10px;border-radius:50%;background:var(--blue)}
+.tl .it.now::before{background:var(--violet);box-shadow:0 0 0 4px rgba(167,139,250,.25)}
+.tl .it b{display:block;font-size:13px}
+.tl .it span{display:block;font-size:11.5px;color:var(--muted)}
+.cs{display:grid;grid-template-columns:92px 1fr;gap:5px 10px;font-size:12px;line-height:1.38}
+.cs dt{color:var(--blue);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding-top:1px}
+.cs dd{margin:0;color:var(--muted)}
+.chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:6px;margin:2px 2px 0 0;background:rgba(91,140,255,.12);color:#C6D4FF;border:1px solid rgba(91,140,255,.25)}
+.chip.v{background:rgba(167,139,250,.12);color:#DCD0FF;border-color:rgba(167,139,250,.3)}
+.chip.g{background:rgba(74,222,154,.1);color:#B5F2D3;border-color:rgba(74,222,154,.3)}
+.chip.a{background:rgba(245,196,107,.1);color:#F8DFA8;border-color:rgba(245,196,107,.3)}
+.mail{font-size:12px;line-height:1.5;color:#D3D9F5;background:#081028;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.mail .h{font-size:11px;color:var(--dim);margin-bottom:6px;letter-spacing:.04em}
+.score{display:inline-flex;gap:3px}.score i{width:14px;height:8px;border-radius:2px;background:rgba(255,255,255,.08)}.score i.on{background:var(--blue)}
+footer.site{max-width:1280px;margin:0 auto;padding:10px 20px 40px;color:var(--dim);font-size:12px;text-align:center}
+/* responsive */
+@media (max-width:1000px){
+  .g4,.g5{grid-template-columns:repeat(2,1fr)}
+  .phases{grid-template-columns:1fr 1fr}
+  .arrow-row{display:none}
+  .cover{grid-template-columns:1fr;padding:40px 28px}
+  .cover .art{display:none}
+  .tl{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  body{font-size:14.5px}
+  main{padding:16px 10px 30px}
+  .slide{padding:30px 20px 48px;border-radius:18px}
+  .slide::before{left:20px}
+  .g2,.g3,.g4,.g5,.phases,.tl{grid-template-columns:1fr}
+  .flow{flex-direction:column}.flow .ar{transform:rotate(90deg)}
+  h2{font-size:25px}
+  .cover h1{font-size:40px}
+  .toc{grid-template-columns:1fr}
+  .cs{grid-template-columns:1fr}
+  .bar{grid-template-columns:110px 1fr 40px}
+  .foot-note{position:static;margin-top:14px}
+  nav.top .brand span{display:none}
+}
+/* print = 16:9 slides */
+@media print{
+  @page{size:1280px 720px;margin:0}
+  html,body{background:#060A16 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  nav.top,footer.site{display:none}
+  main{max-width:none;padding:0;margin:0}
+  .slide{width:1280px;height:720px;margin:0;border:none;border-radius:0;padding:38px 56px 48px;break-after:page;page-break-after:always;background:linear-gradient(180deg,#0F1736,#0A0F24) !important}
+  .slide::before{left:56px}
+  .cover{padding:56px 64px}
+  .foot-note{left:56px;right:56px}
+  .grad{background:none;-webkit-text-fill-color:#B9A9FF;color:#B9A9FF}
+}
+</style>
+</head>
+<body>
+<nav class="top"><div class="in">
+  <div class="brand">Arslan Khan <span>· Talent Acquisition Portfolio</span></div>
+  <div class="links">
+    <a href="#intro">Intro</a><a href="#philosophy">Philosophy</a><a href="#lifecycle">Lifecycle</a><a href="#technical">Technical hiring</a><a href="#sourcing">Sourcing</a><a href="#mapping">Talent mapping</a><a href="#assessment">Assessment</a><a href="#ai">AI Copilot</a><a href="#metrics">Metrics</a><a href="#cx">Candidate experience</a><a href="#offer">Offers</a><a href="#ninety">First 90 days</a><a href="#cases">Case studies</a><a href="#opmodel">Operating model</a><a href="#plan">My 30/60/90</a><a href="#idea">Recommendation</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<main>
+
+<!-- ============ COVER ============ -->
+<section class="slide cover" id="top">
+  <div>
+    <div class="eyebrow">Prepared for ImagineArt · People &amp; Talent · Talent Acquisition</div>
+    <h1>TALENT ACQUISITION<br><span class="grad">PORTFOLIO</span></h1>
+    <p class="sub">Building Talent Pipelines. Identifying Exceptional People. Enabling Organizational Growth.</p>
+    <div class="by">Prepared by <b>Arslan Khan</b> &nbsp;|&nbsp; aPHRi™ &nbsp;|&nbsp; CHRP®</div>
+    <div class="toc">
+      <div><b>Technical hiring playbooks</b><br>AI/ML, engineering, product, design, growth</div>
+      <div><b>Builder-first sourcing</b><br>GitHub, Hugging Face, Kaggle, Discord, X, labs</div>
+      <div><b>AI Talent Acquisition Copilot</b><br>Working prototype with human checkpoints</div>
+      <div><b>Metrics &amp; operating model</b><br>Plus a 30/60/90 plan and one hiring idea</div>
+    </div>
+    <p class="note" style="margin-top:22px">Frameworks, dashboards and candidate data in this portfolio are illustrative or synthetic and are labelled as such. No employer-confidential or real candidate information is used.</p>
+  </div>
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 460 460" width="100%" style="max-width:460px;display:block;margin:auto">
+      <defs>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#7C5CF0" stop-opacity=".55"/><stop offset="1" stop-color="#7C5CF0" stop-opacity="0"/></radialGradient>
+        <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#5B8CFF"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+      </defs>
+      <circle cx="230" cy="230" r="210" fill="url(#glow)"/>
+      <g stroke="url(#ln)" stroke-width="1.2" opacity=".55">
+        <line x1="70" y1="110" x2="180" y2="160"/><line x1="60" y1="250" x2="180" y2="160"/><line x1="90" y1="370" x2="190" y2="300"/><line x1="60" y1="250" x2="190" y2="300"/>
+        <line x1="180" y1="160" x2="300" y2="200"/><line x1="190" y1="300" x2="300" y2="200"/><line x1="190" y1="300" x2="310" y2="330"/>
+        <line x1="300" y1="200" x2="400" y2="230"/><line x1="310" y1="330" x2="400" y2="230"/><line x1="140" y1="60" x2="180" y2="160"/><line x1="250" y1="80" x2="300" y2="200"/>
+      </g>
+      <g fill="#8FB0FF">
+        <circle cx="70" cy="110" r="5"/><circle cx="60" cy="250" r="5"/><circle cx="90" cy="370" r="5"/><circle cx="140" cy="60" r="4"/><circle cx="250" cy="80" r="4"/>
+        <circle cx="180" cy="160" r="8"/><circle cx="190" cy="300" r="8"/><circle cx="300" cy="200" r="10" fill="#B9A6FF"/><circle cx="310" cy="330" r="7"/>
+      </g>
+      <circle cx="400" cy="230" r="22" fill="#0C1330" stroke="#C4B2FF" stroke-width="2"/>
+      <path d="M392 230l6 6 11-12" stroke="#C4B2FF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g font-family="Inter,Arial" font-size="11" fill="#A3ACD0" letter-spacing="1.5">
+        <text x="20" y="430">SIGNAL</text><text x="170" y="430">ENGAGE</text><text x="290" y="430">ASSESS</text><text x="380" y="430">HIRE</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ 01 INTRO ============ -->
+<section class="slide" id="intro" data-page="02">
+  <div class="eyebrow"><span class="n">01</span> Professional Introduction</div>
+  <h2>A recruiter who hires for the business — <span class="grad">and stays with people after the offer</span></h2>
+  <p class="lede">HR and Talent Acquisition professional based in Islamabad, hiring since 2019 across IT services, healthcare IT and technology companies — software, cloud, infrastructure, support and business roles — and building the HR processes that make hiring repeatable.</p>
+  <div class="g g3" style="margin-bottom:18px">
+    <div class="card hi"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg></div><div><h3>Technical hiring literacy</h3><p>Hiring for Java, .NET, DevOps and Cloud profiles at Stella Technology; network and infrastructure roles at CDigital. Tech Recruitment Certified Professional (DevSkiller).</p></div></div></div>
+    <div class="card hi"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="16" r="3"/></svg></div><div><h3>Structured, fair process</h3><p>Job descriptions, competency-based interviews, scorecards, candidate tracking and onboarding — built so that decisions are consistent and explainable.</p></div></div></div>
+    <div class="card hi"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/></svg></div><div><h3>AI-enabled, human-decided</h3><p>Using Claude and ChatGPT for role analysis, sourcing strings and structured summaries — with every hiring decision kept with people. See Section 08.</p></div></div></div>
+  </div>
+  <h4 style="margin-bottom:12px">Career path</h4>
+  <div class="tl" style="margin-bottom:22px">
+    <div class="it"><b>HR Executive</b><span>MTBC | CareCloud · 2019–2021</span><span class="dim">End-to-end recruitment, healthcare IT &amp; support roles</span></div>
+    <div class="it"><b>Talent Acquisition Specialist</b><span>Stella Technology · 2021–2023</span><span class="dim">Niche IT hiring: Java, .NET, DevOps, Cloud</span></div>
+    <div class="it"><b>HR Generalist</b><span>One Network · 2024</span><span class="dim">Technical hiring across multiple locations</span></div>
+    <div class="it"><b>Assistant Manager HR</b><span>CodingKey · 2024–2025</span><span class="dim">Recruitment operations, onboarding, workforce planning</span></div>
+    <div class="it now"><b>Manager HR &amp; Talent Acquisition</b><span>CDigital · Current</span><span class="dim">Technical &amp; non-technical hiring, HR practice build</span></div>
+  </div>
+  <div class="g" style="grid-template-columns:1.4fr 1fr;align-items:center">
+    <div class="quote">“I identify, engage and hire people who move the business forward — and I treat hiring as finished only when the new hire is <span class="grad">productive and growing</span>.”</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end">
+      <span class="pill">aPHRi™ · HRCI · 2025</span><span class="pill">CHRP® · NUST PDC · 2025</span><span class="pill">Tech Recruitment Certified · DevSkiller</span><span class="pill">Naukrigulf Certified Recruiter</span><span class="pill">BBA (Hons) HRM · PMAS-AAUR</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 PHILOSOPHY ============ -->
+<section class="slide" id="philosophy" data-page="03">
+  <div class="eyebrow"><span class="n">02</span> My Talent Acquisition Philosophy</div>
+  <h2>A business partner, <span class="grad">not a CV-processing queue</span></h2>
+  <p class="lede">Eight principles that shape how I run every search. Each one replaces a habit that slows down technology hiring.</p>
+  <div class="g g4">
+    <div class="card"><h4 style="color:var(--blue)">01 · Strategy</h4><h3 style="margin:6px 0">Hiring is a business function</h3><p>Every search starts from the business outcome the role must deliver in 6–12 months, not from a copied job description.</p></div>
+    <div class="card"><h4 style="color:var(--blue)">02 · Quality</h4><h3 style="margin:6px 0">Quality of hire over volume</h3><p>A short list of high-signal candidates beats 400 applicants. I measure the pipeline by fit and conversion, not count.</p></div>
+    <div class="card"><h4 style="color:var(--blue)">03 · Outbound</h4><h3 style="margin:6px 0">Proactive over passive</h3><p>The best builders are rarely applying. I go where they publish work — repos, models, notebooks, communities.</p></div>
+    <div class="card"><h4 style="color:var(--blue)">04 · Experience</h4><h3 style="margin:6px 0">Candidates are future advocates</h3><p>Clear stages, fast replies, real feedback. Every candidate — hired or not — should leave respecting the company.</p></div>
+    <div class="card"><h4 style="color:var(--violet)">05 · Partnership</h4><h3 style="margin:6px 0">Hiring managers as co-owners</h3><p>Calibrated intake, agreed must-haves, shared scorecards and a weekly review. The search is a joint project.</p></div>
+    <div class="card"><h4 style="color:var(--violet)">06 · Fairness</h4><h3 style="margin:6px 0">Structured assessment</h3><p>Same questions, anchored ratings, independent feedback before debrief. Fair to candidates and harder to fool.</p></div>
+    <div class="card"><h4 style="color:var(--violet)">07 · Evidence</h4><h3 style="margin:6px 0">Data-driven decisions</h3><p>Funnel conversion, source quality and drop-off tell me where to fix the process — not opinions after the fact.</p></div>
+    <div class="card"><h4 style="color:var(--violet)">08 · Relationships</h4><h3 style="margin:6px 0">Long-term talent relationships</h3><p>A “not now” is the start of a relationship. Warm pipelines mean the next search never starts from zero.</p></div>
+  </div>
+  <div class="card hi" style="margin-top:18px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+    <h3 style="flex:none">What this looks like in practice</h3>
+    <span class="chip">Intake in 48 hours</span><span class="chip">Outbound-first shortlist</span><span class="chip">First technical conversation by the recruiter</span><span class="chip v">Scorecards before debrief</span><span class="chip v">Honest closing</span><span class="chip g">90-day follow-through</span>
+  </div>
+</section>
+
+<!-- ============ 03 LIFECYCLE ============ -->
+<section class="slide" id="lifecycle" data-page="04">
+  <div class="eyebrow"><span class="n">03</span> End-to-End Recruitment Lifecycle</div>
+  <h2>Nineteen stages, five phases, <span class="grad">one accountable owner</span></h2>
+  <p class="lede">The full lifecycle from workforce need to the 90-day check-in. Talent Acquisition owns the flow end to end; hiring managers and interview panels own technical judgement.</p>
+  <div class="phases">
+    <div class="phase"><div class="ph" style="color:#8FB0FF">Phase 1</div><h3>Plan</h3>
+      <div class="step"><i>1</i>Workforce &amp; manpower need</div><div class="step"><i>2</i>Hiring manager intake</div><div class="step"><i>3</i>Job description</div><div class="step"><i>4</i>Role calibration &amp; competencies</div><div class="step"><i>5</i>Recruitment strategy</div>
+      <div class="out"><b>Output:</b> approved requisition, scorecard, search plan</div></div>
+    <div class="phase"><div class="ph" style="color:#9FA8FF">Phase 2</div><h3>Find</h3>
+      <div class="step"><i>6</i>Talent market mapping</div><div class="step"><i>7</i>Active sourcing</div><div class="step"><i>8</i>Outreach &amp; engagement</div>
+      <div class="out"><b>Output:</b> mapped talent pool, engaged long-list</div></div>
+    <div class="phase"><div class="ph" style="color:#AFA0FF">Phase 3</div><h3>Assess</h3>
+      <div class="step"><i>9</i>Resume screening</div><div class="step"><i>10</i>Initial assessment</div><div class="step"><i>11</i>Technical assessment</div><div class="step"><i>12</i>Interview coordination</div><div class="step"><i>13</i>Feedback &amp; evaluation</div><div class="step"><i>14</i>Reference checks</div>
+      <div class="out"><b>Output:</b> evidence-based hire / no-hire decision</div></div>
+    <div class="phase"><div class="ph" style="color:#BC98FF">Phase 4</div><h3>Close</h3>
+      <div class="step"><i>15</i>Offer &amp; negotiation</div><div class="step"><i>16</i>Offer acceptance</div><div class="step"><i>17</i>Preboarding &amp; joining</div>
+      <div class="out"><b>Output:</b> signed offer, confirmed joining date</div></div>
+    <div class="phase"><div class="ph" style="color:#C4B2FF">Phase 5</div><h3>Grow</h3>
+      <div class="step"><i>18</i>Onboarding &amp; early engagement</div><div class="step"><i>19</i>30 / 60 / 90-day follow-up</div>
+      <div class="out"><b>Output:</b> productive hire, quality-of-hire signal</div></div>
+  </div>
+  <div class="arrow-row"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="legend" style="margin-top:14px"><span><span class="sw" style="background:var(--blue)"></span>TA owns: stages 1–10, 12, 14–19</span><span><span class="sw" style="background:var(--violet)"></span>Hiring manager &amp; panel own: technical judgement (11, 13) and final decision</span><span><span class="sw" style="background:var(--green)"></span>People team: onboarding, career growth (18–19, shared)</span></div>
+</section>
+
+<section class="slide" data-page="05">
+  <div class="eyebrow"><span class="n">03</span> Lifecycle — purpose, ownership and output</div>
+  <h2 style="font-size:26px">What each stage is for, who owns it, <span class="grad">and what it must produce</span></h2>
+  <div class="tw"><table class="t" style="font-size:12px">
+    <thead><tr><th>#</th><th>Stage</th><th>Purpose</th><th>Owner</th><th>Expected output</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Workforce need</td><td>Confirm the business problem and whether a hire is the right answer</td><td>Founder / HM + TA</td><td>Approved headcount</td></tr>
+      <tr><td>2</td><td>Intake meeting</td><td>Agree outcomes, must-haves, trainables, deal-breakers, timeline</td><td>TA (leads) + HM</td><td>Intake brief</td></tr>
+      <tr><td>3</td><td>Job description</td><td>Describe the real work and growth honestly, in builder language</td><td>TA + HM</td><td>Published JD</td></tr>
+      <tr><td>4</td><td>Calibration</td><td>Review 3–5 sample profiles to align on what “great” looks like</td><td>TA + HM</td><td>Scorecard with anchors</td></tr>
+      <tr><td>5</td><td>Strategy</td><td>Choose channels, outreach angle, assessment design and SLAs</td><td>TA</td><td>Search plan</td></tr>
+      <tr><td>6</td><td>Market mapping</td><td>Know where the talent sits, its availability and compensation range</td><td>TA</td><td>Talent map</td></tr>
+      <tr><td>7–8</td><td>Sourcing &amp; outreach</td><td>Personalised, work-based outreach to passive candidates</td><td>TA</td><td>Engaged long-list</td></tr>
+      <tr><td>9–10</td><td>Screening &amp; first call</td><td>Check must-haves, motivation, compensation and a first technical conversation</td><td>TA</td><td>Screening summary</td></tr>
+      <tr><td>11</td><td>Technical assessment</td><td>Validate depth through take-home, work trial or live session</td><td>HM / engineers (TA coordinates)</td><td>Scored work sample</td></tr>
+      <tr><td>12–13</td><td>Interviews &amp; feedback</td><td>Structured loop; independent scorecards submitted within 24 hours</td><td>Panel (TA runs debrief)</td><td>Hire / no-hire decision</td></tr>
+      <tr><td>14</td><td>References</td><td>Confirm scope of past work and working style, where applicable</td><td>TA</td><td>Reference notes</td></tr>
+      <tr><td>15–16</td><td>Offer &amp; acceptance</td><td>Pre-closed, fair offer presented live, objections handled honestly</td><td>TA + founder approval</td><td>Signed offer</td></tr>
+      <tr><td>17</td><td>Preboarding</td><td>Keep the hire engaged through notice period; prepare day one</td><td>TA + People team</td><td>Confirmed joining</td></tr>
+      <tr><td>18–19</td><td>Onboarding &amp; follow-up</td><td>Role clarity, early wins, check-ins at 30/60/90 days</td><td>Manager + People team + TA</td><td>Quality-of-hire signal</td></tr>
+    </tbody></table></div>
+</section>
+
+<!-- ============ 04 TECHNICAL ============ -->
+<section class="slide" id="technical" data-page="06">
+  <div class="eyebrow"><span class="n">04</span> Technical Talent Acquisition</div>
+  <h2>A real first technical conversation — <span class="grad">without pretending to be an engineer</span></h2>
+  <p class="lede">I am an HR and Talent Acquisition professional, not a software engineer. My job in a first conversation is to understand what a candidate actually built and owned, so that engineers spend their time only on candidates worth validating in depth.</p>
+  <div class="g" style="grid-template-columns:1.15fr 1fr 1fr">
+    <div class="card hi">
+      <h3>The project deep-dive (20–30 min)</h3>
+      <p style="margin-bottom:8px">Five questions about one project the candidate is proud of:</p>
+      <div class="step" style="border:none"><i>1</i><span><b>What did you build?</b> The problem, the users, the scale.</span></div>
+      <div class="step"><i>2</i><span><b>What was your part?</b> “I” vs “we” — what they personally designed, wrote, decided.</span></div>
+      <div class="step"><i>3</i><span><b>Why that stack?</b> Can they explain trade-offs, not just list tools?</span></div>
+      <div class="step"><i>4</i><span><b>What broke?</b> A real failure, how they debugged it, what changed.</span></div>
+      <div class="step"><i>5</i><span><b>What was the impact?</b> Latency, cost, users, quality — and what they’d do differently.</span></div>
+    </div>
+    <div class="card">
+      <h3 style="color:#BFD0FF">What I validate</h3>
+      <ul class="l">
+        <li>Ownership and scope of contribution</li><li>Can explain technical choices in plain language</li><li>Problem-solving narrative and learning speed</li><li>Evidence of shipping (repos, demos, models, products)</li><li>Motivation, role fit, compensation, notice period</li><li>Communication and collaboration signals</li>
+      </ul>
+      <h3 style="color:#BFD0FF;margin-top:12px">Signals I listen for</h3>
+      <ul class="l"><li>Specific numbers and constraints</li><li>Honest about what didn’t work</li><li>Curiosity about our problems</li></ul>
+    </div>
+    <div class="card">
+      <h3 style="color:#DCD0FF">What engineers validate</h3>
+      <ul class="l">
+        <li>Depth of algorithmic and system-design skill</li><li>Code quality in a work sample or pairing session</li><li>ML fundamentals, research rigour, evaluation design</li><li>Architecture judgement at our scale</li><li>Technical bar for the level being hired</li>
+      </ul>
+      <h3 style="color:#DCD0FF;margin-top:12px">How I prepare engineers</h3>
+      <ul class="l"><li>Screening summary with evidence and open questions</li><li>Agreed scorecard and focus area per interviewer</li><li>Feedback form due within 24 hours</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-page="07">
+  <div class="eyebrow"><span class="n">04</span> Role playbooks · AI &amp; engineering</div>
+  <h2 style="font-size:26px">What to look for, where to find it, <span class="grad">how to assess it</span></h2>
+  <div class="tw"><table class="t" style="font-size:11.6px">
+    <thead><tr><th style="width:12%">Role</th><th style="width:17%">Look for</th><th style="width:19%">Skills to understand</th><th style="width:17%">Talent pools</th><th style="width:17%">Assessment</th><th style="width:18%">Interview loop</th></tr></thead>
+    <tbody>
+      <tr><td>AI / ML Engineer</td><td>Has shipped models to production: training, fine-tuning, serving, evaluation</td><td>PyTorch, diffusion &amp; transformer basics, inference optimisation, GPUs, MLOps, evals</td><td>Hugging Face, GitHub, Kaggle, university AI labs, MLOps communities</td><td>Practical take-home (e.g., evaluate or speed up a model) or review of own repo</td><td>Recruiter screen → ML deep-dive → practical → team &amp; values → founder</td></tr>
+      <tr><td>ML Researcher</td><td>Papers, preprints or credible reproductions; original experiments</td><td>Generative models, training at scale, evaluation methodology, reading research</td><td>arXiv &amp; conference author lists, research labs, Papers with Code, Hugging Face</td><td>Research talk on own work + discussion of a recent paper</td><td>Screen → research talk → research lead deep-dive → coding → founder</td></tr>
+      <tr><td>Generative AI / Applied AI</td><td>Built LLM apps or agents that real users touch</td><td>LLM APIs, RAG, tool use and agents, prompt design, evals, latency and cost</td><td>X, GitHub, hackathons, AI Discords, indie maker communities</td><td>Demo walkthrough + short paid build trial</td><td>Screen → demo → build trial review → product &amp; values</td></tr>
+      <tr><td>Backend Engineer</td><td>Owned services under real load; reliability mindset</td><td>Go / Python / Node, APIs, queues, databases, cloud, observability, GPU job orchestration</td><td>GitHub, LinkedIn, Stack Overflow, local Go &amp; cloud meetups</td><td>Practical coding + system design discussion</td><td>Screen → coding → system design → team &amp; values</td></tr>
+      <tr><td>Frontend Engineer</td><td>Polished, fast product UI; cares about craft</td><td>React / Next.js, TypeScript, performance, canvas / WebGL editors, design systems</td><td>GitHub, personal sites, X, Frontend Discords, design-engineering communities</td><td>Small UI build or live pairing on a component</td><td>Screen → UI exercise → code review → design collab → values</td></tr>
+      <tr><td>Full Stack Developer</td><td>Ships features end to end, independently</td><td>Frontend + backend + data model + deployment; product thinking</td><td>Indie makers, hackathon winners, GitHub, Product Hunt</td><td>Feature-sized take-home or paid work trial</td><td>Screen → work trial → technical review → founder</td></tr>
+    </tbody></table></div>
+  <p class="note">Skill lists are a recruiter’s working vocabulary for screening conversations and sourcing — the technical bar itself is set and assessed by the hiring manager and engineers.</p>
+</section>
+
+<section class="slide" data-page="08">
+  <div class="eyebrow"><span class="n">04</span> Role playbooks · product, design &amp; growth</div>
+  <h2 style="font-size:26px">Builder roles beyond engineering</h2>
+  <div class="tw"><table class="t" style="font-size:11.8px">
+    <thead><tr><th style="width:12%">Role</th><th style="width:18%">Look for</th><th style="width:19%">Skills to understand</th><th style="width:17%">Talent pools</th><th style="width:17%">Assessment</th><th style="width:17%">Interview loop</th></tr></thead>
+    <tbody>
+      <tr><td>Product Manager</td><td>Shipped and measured product changes; strong product sense for AI tools</td><td>Funnels, A/B testing, product-led growth, analytics, writing specs, working with engineers</td><td>Ex-founders, Product Hunt makers, PM communities, LinkedIn</td><td>Product case on a real ImagineArt flow</td><td>Screen → product case → HM → engineering partner → founder</td></tr>
+      <tr><td>UI/UX &amp; Product Designer</td><td>Portfolio that shows process and outcomes, not only visuals</td><td>Figma, interaction design, design systems, prototyping, creative-tool UX</td><td>Dribbble, Behance, Figma Community, X, design bootcamps</td><td>Portfolio review + scoped design exercise</td><td>Screen → portfolio walk-through → exercise → PM &amp; engineering</td></tr>
+      <tr><td>Growth &amp; Marketing</td><td>Owned a channel with numbers: SEO, paid, content, creator, community</td><td>GA4 / Mixpanel, experiments, SEO, creator and performance marketing</td><td>LinkedIn, X, growth communities, creator networks</td><td>Channel teardown or short work trial</td><td>Screen → case → HM → cross-functional → founder</td></tr>
+    </tbody></table></div>
+  <div class="g g2" style="margin-top:20px">
+    <div class="card hi"><h3>Working with technical hiring managers</h3>
+      <ul class="l"><li><b>Intake in 48 hours:</b> outcomes, must-haves vs. trainable skills, deal-breakers, level</li><li><b>Calibration:</b> review 3–5 real profiles together before outreach starts</li><li><b>Interview design:</b> each panellist owns one competency with anchored ratings</li><li><b>Rhythm:</b> weekly 20-minute pipeline review; feedback within 24 hours</li><li><b>Honesty loop:</b> if the market can’t meet the brief, I bring data and options</li></ul></div>
+    <div class="card"><h3>How I keep learning the technology</h3>
+      <ul class="l"><li>Ask engineers to explain the stack and current problems at intake</li><li>Read the job’s core concepts before sourcing (e.g., diffusion, RAG, inference)</li><li>Debrief with interviewers on why a candidate passed or failed</li><li>Build small tools myself — see the AI Talent Acquisition Copilot</li></ul>
+      <p class="note">Tech Recruitment Certified Professional — DevSkiller.</p></div>
+  </div>
+</section>
+
+<!-- ============ 05 SOURCING ============ -->
+<section class="slide" id="sourcing" data-page="09">
+  <div class="eyebrow"><span class="n">05</span> Advanced Talent Sourcing Strategy</div>
+  <h2 style="font-size:28px">Go where builders <span class="grad">publish their work</span></h2>
+  <div class="tw"><table class="t" style="font-size:11.6px">
+    <thead><tr><th style="width:12%">Channel</th><th style="width:22%">Sourcing method</th><th style="width:24%">Search approach</th><th style="width:18%">Candidate profiles</th><th style="width:24%">Engagement</th></tr></thead>
+    <tbody>
+      <tr><td>GitHub</td><td>Review public repos and contribution history</td><td>User search by location, language, followers; topic search (diffusion, comfyui, golang)</td><td>Backend, frontend, ML engineers, OSS contributors</td><td>Reference a specific repo or PR; invite to a technical chat</td></tr>
+      <tr><td>Hugging Face</td><td>Find authors of models, datasets and Spaces</td><td>Filter by task (text-to-image, image-to-image), recent activity; check linked profiles</td><td>ML engineers, fine-tuning specialists, researchers</td><td>Comment on their model card choices; offer a talk with our ML team</td></tr>
+      <tr><td>Kaggle</td><td>Competition rankings, notebooks, discussions</td><td>Computer vision and generative competitions; notebook medals; country filter</td><td>Data scientists, early-career ML talent</td><td>Mention a notebook; invite to a build challenge</td></tr>
+      <tr><td>Discord</td><td>Participate in AI, dev and design servers as a member</td><td>Follow help channels and show-and-tell; respect each server’s rules on recruiting</td><td>Practitioners, open-source builders, creators</td><td>Contribute first; recruit only where allowed</td></tr>
+      <tr><td>X (Twitter)</td><td>Follow AI builders, researchers and “build in public” posts</td><td>Lists by topic; search demos and launch threads; note who ships weekly</td><td>Applied AI engineers, indie hackers, designers</td><td>Reply genuinely to their work before a short DM</td></tr>
+      <tr><td>LinkedIn</td><td>Recruiter search, Boolean, alumni and company filters</td><td>Boolean by skill cluster; past-company and school filters; open-to-work as a signal only</td><td>Experienced engineers, PMs, growth, GTM</td><td>Personalised InMail with role-specific hook</td></tr>
+      <tr><td>University labs</td><td>Partner with AI/CS labs and faculty</td><td>Final-year projects, thesis topics, lab pages, research showcases</td><td>Interns, fellows, junior researchers</td><td>Guest talks, internships, sponsored challenges</td></tr>
+      <tr><td>Hackathons</td><td>Sponsor, judge or mentor</td><td>Winning and shortlisted teams; projects with working demos</td><td>Fast, practical problem-solvers</td><td>Same-week follow-up while the build is fresh</td></tr>
+      <tr><td>Indie makers</td><td>Product Hunt, indie hacker forums, makers on X</td><td>Solo-built products with real users; launch history</td><td>Full stack builders, product engineers, ex-founders</td><td>Talk about their product first; frame ImagineArt as a bigger canvas</td></tr>
+    </tbody></table></div>
+  <p class="note">Guardrails: public information only, no scraping tools, respect each platform’s terms and community rules, honour opt-outs, never contact the same person on several channels in parallel.</p>
+</section>
+
+<section class="slide" data-page="10">
+  <div class="eyebrow"><span class="n">05</span> Search strings &amp; outreach</div>
+  <h2 style="font-size:26px">Boolean that finds signal, <span class="grad">outreach that earns a reply</span></h2>
+  <div class="g" style="grid-template-columns:1.1fr 1fr">
+    <div>
+      <h4 style="margin-bottom:8px">Search strings by role</h4>
+      <div class="code" style="margin-bottom:8px"><span class="c"># LinkedIn — ML Engineer (generative imaging)</span>
+(<span class="s">"machine learning engineer"</span> OR <span class="s">"ML engineer"</span> OR <span class="s">"AI engineer"</span>) <span class="k">AND</span> (PyTorch OR TensorFlow) <span class="k">AND</span> (diffusion OR <span class="s">"computer vision"</span> OR generative OR <span class="s">"image generation"</span>) <span class="k">NOT</span> (intern OR trainee)</div>
+      <div class="code" style="margin-bottom:8px"><span class="c"># LinkedIn — Backend (Go)</span>
+(<span class="s">"backend engineer"</span> OR <span class="s">"software engineer"</span>) <span class="k">AND</span> (Golang OR <span class="s">"Go developer"</span>) <span class="k">AND</span> (Kubernetes OR microservices OR gRPC) <span class="k">AND</span> (Redis OR Kafka OR RabbitMQ)</div>
+      <div class="code" style="margin-bottom:8px"><span class="c"># GitHub user search — Go engineers in Pakistan</span>
+location:Pakistan language:Go followers:&gt;20 repos:&gt;8</div>
+      <div class="code" style="margin-bottom:8px"><span class="c"># Google X-ray — public GitHub profiles, generative imaging</span>
+site:github.com (<span class="s">"Islamabad"</span> OR <span class="s">"Lahore"</span> OR <span class="s">"Karachi"</span>) (diffusion OR comfyui OR LoRA) -jobs</div>
+      <div class="code"><span class="c"># LinkedIn — Product Designer, creative tools</span>
+(<span class="s">"product designer"</span> OR <span class="s">"UX designer"</span> OR <span class="s">"UI/UX"</span>) <span class="k">AND</span> Figma <span class="k">AND</span> (<span class="s">"design system"</span> OR prototyping) <span class="k">AND</span> (SaaS OR AI OR <span class="s">"creative tools"</span>)</div>
+    </div>
+    <div>
+      <h4 style="margin-bottom:8px">Sample outreach <span class="illus" style="margin-left:6px">Fictional recipients</span></h4>
+      <div class="mail" style="margin-bottom:10px"><div class="h">TO: “Sana” · ML engineer found via a Hugging Face model card</div>
+Hi Sana — your SDXL LoRA for architectural renders caught my eye, especially the side-by-side comparison in the model card showing where it beats the base model. I recruit for ImagineArt in Islamabad, where the team trains and serves its own image model. Would you be open to a 20-minute chat with one of our ML engineers about the inference problems they’re working on? No CV needed. If the timing isn’t right, I’d still like to stay in touch.</div>
+      <div class="mail" style="margin-bottom:10px"><div class="h">TO: “Hamza” · frontend engineer found via a GitHub repo</div>
+Hi Hamza — I spent some time in your canvas-editor repo; the undo/redo history using command objects is really clean. ImagineArt builds creative tools used by 1,000+ organisations, and our editor work has similar problems at a much larger scale. Open to a short call this week to hear what you’re building next?</div>
+      <div class="card" style="padding:12px 14px"><h3 style="font-size:13.5px">Outreach rules I follow</h3><ul class="l small"><li>Lead with <b>their work</b>, then the problem we’re solving</li><li>One clear, low-effort ask — a conversation, not an application</li><li>Two follow-ups maximum, five working days apart</li><li>Every reply gets an answer, including a “no”</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 MAPPING ============ -->
+<section class="slide" id="mapping" data-page="11">
+  <div class="eyebrow"><span class="n">06</span> Talent Mapping &amp; Pipeline Development</div>
+  <h2 style="font-size:28px">Never start a search <span class="grad">from zero</span></h2>
+  <div class="g" style="grid-template-columns:1fr 1.55fr">
+    <div class="g" style="gap:12px">
+      <div class="card"><h3>Talent segmentation</h3><p style="margin-bottom:6px">Three horizons kept warm at all times:</p>
+        <div class="row" style="margin:4px 0"><span class="chip">NOW</span><span class="small muted">Open roles — active long-lists</span></div>
+        <div class="row" style="margin:4px 0"><span class="chip v">NEXT</span><span class="small muted">Roles forecast in 1–2 quarters — engaged, warm</span></div>
+        <div class="row" style="margin:4px 0"><span class="chip g">FUTURE</span><span class="small muted">Students, researchers, builders — community</span></div></div>
+      <div class="card"><h3>Candidate personas <span class="illus" style="margin-left:4px">Illustrative</span></h3>
+        <p><b style="color:var(--text)">The Shipping Researcher</b> — MS/PhD or lab background, has published or reproduced work, wants models that reach real users.</p>
+        <p style="margin-top:6px"><b style="color:var(--text)">The Indie Builder</b> — built and launched products alone, values ownership and speed over titles.</p></div>
+      <div class="card"><h3>Pipeline maintenance</h3><ul class="l"><li>CRM tags: skill cluster, horizon, relationship stage, consent date</li><li>Quarterly check-ins with warm talent; share team news</li><li>Silver medallists re-engaged first for new roles</li><li>Remove data on request or after the agreed retention period</li></ul></div>
+    </div>
+    <div>
+      <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:8px"><h4>Sample talent map — ML engineering</h4><span class="illus">Illustrative · synthetic segments</span></div>
+      <div class="tw"><table class="t" style="font-size:12px">
+        <thead><tr><th>Segment</th><th>Where they sit</th><th>Est. pool</th><th>Seniority</th><th>Availability</th><th>Stage</th></tr></thead>
+        <tbody>
+          <tr><td>CV engineers</td><td>Local IT-services firms with computer-vision teams</td><td>40–60</td><td>Mid</td><td>Medium</td><td><span class="chip">Mapped</span></td></tr>
+          <tr><td>Applied AI engineers</td><td>AI product startups (Pakistan &amp; remote)</td><td>25–40</td><td>Mid–Senior</td><td>Low</td><td><span class="chip v">Engaged</span></td></tr>
+          <tr><td>Generative model hobbyists</td><td>Hugging Face / Civitai authors in-country</td><td>30–50</td><td>Junior–Mid</td><td>High</td><td><span class="chip v">Engaged</span></td></tr>
+          <tr><td>Research graduates</td><td>University AI labs (MS / PhD)</td><td>20–30</td><td>Junior</td><td>High (seasonal)</td><td><span class="chip g">Community</span></td></tr>
+          <tr><td>Diaspora returners</td><td>Pakistani engineers abroad open to returning</td><td>15–25</td><td>Senior</td><td>Low</td><td><span class="chip">Mapped</span></td></tr>
+          <tr><td>Kaggle competitors</td><td>CV / generative competition top tiers</td><td>20–35</td><td>Junior–Mid</td><td>Medium</td><td><span class="chip a">Identified</span></td></tr>
+        </tbody></table></div>
+      <div class="g g2" style="margin-top:14px">
+        <div class="card"><h3>Competitor talent mapping</h3><p>Map by <b style="color:var(--text)">capability</b>, not poaching lists: which teams build similar products, what skills they hire, how they pay, and why people leave.</p></div>
+        <div class="card"><h3>Hiring forecast <span class="illus" style="margin-left:4px">Illustrative</span></h3>
+          <div class="bar" style="grid-template-columns:110px 1fr 30px"><span>Engineering</span><div class="tr"><div class="fl" style="width:80%"></div></div><span class="val">8</span></div>
+          <div class="bar" style="grid-template-columns:110px 1fr 30px"><span>AI / ML</span><div class="tr"><div class="fl" style="width:50%"></div></div><span class="val">5</span></div>
+          <div class="bar" style="grid-template-columns:110px 1fr 30px"><span>Product &amp; design</span><div class="tr"><div class="fl" style="width:30%"></div></div><span class="val">3</span></div>
+          <div class="bar" style="grid-template-columns:110px 1fr 30px"><span>Growth &amp; GTM</span><div class="tr"><div class="fl" style="width:40%"></div></div><span class="val">4</span></div>
+          <p class="xs dim" style="margin-top:4px">Next two quarters, by role family</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 ASSESSMENT ============ -->
+<section class="slide" id="assessment" data-page="12">
+  <div class="eyebrow"><span class="n">07</span> Candidate Assessment &amp; Interview Framework</div>
+  <h2 style="font-size:28px">Structured assessment: <span class="grad">consistent, fair, evidence-based</span></h2>
+  <div class="flow" style="margin-bottom:16px">
+    <div class="fs"><b>1 · Screen</b><span>Must-haves, motivation, compensation, notice</span></div><div class="ar">→</div>
+    <div class="fs"><b>2 · Recruiter tech chat</b><span>Project deep-dive, ownership, communication</span></div><div class="ar">→</div>
+    <div class="fs"><b>3 · Work sample</b><span>Take-home or paid trial, time-boxed, scored on rubric</span></div><div class="ar">→</div>
+    <div class="fs"><b>4 · Panel</b><span>Each interviewer owns one competency</span></div><div class="ar">→</div>
+    <div class="fs"><b>5 · Founder &amp; values</b><span>Ownership, hunger, collaboration</span></div><div class="ar">→</div>
+    <div class="fs human"><b>6 · Debrief</b><span>Scores submitted first; decision by people</span></div>
+  </div>
+  <div class="g" style="grid-template-columns:1.5fr 1fr">
+    <div>
+      <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:6px"><h4>Candidate evaluation scorecard — ML Engineer</h4><span class="illus">Illustrative · synthetic candidate</span></div>
+      <table class="t" style="font-size:12px">
+        <thead><tr><th>Competency</th><th>Weight</th><th>Anchor for “4 — strong”</th><th>Rater</th><th>Score</th></tr></thead>
+        <tbody>
+          <tr><td>ML depth</td><td>30%</td><td>Explains model and training choices with trade-offs and evidence</td><td>ML lead</td><td><span class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td></tr>
+          <tr><td>Engineering quality</td><td>20%</td><td>Work sample is readable, tested, reasonably efficient</td><td>Engineer</td><td><span class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></td></tr>
+          <tr><td>Problem solving</td><td>20%</td><td>Breaks down an unfamiliar problem and checks assumptions</td><td>Engineer</td><td><span class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td></tr>
+          <tr><td>Ownership</td><td>15%</td><td>Clear examples of driving work to done without being asked</td><td>HM</td><td><span class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td></tr>
+          <tr><td>Communication</td><td>15%</td><td>Explains technical work clearly to a non-specialist</td><td>Recruiter</td><td><span class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td></tr>
+        </tbody></table>
+      <p class="xs dim" style="margin-top:6px">Scale 1–5 with written anchors for 1, 3 and 5. Weighted score informs the debrief; it never replaces it.</p>
+    </div>
+    <div class="card hi"><h3>Why structure works</h3>
+      <ul class="l"><li>Every candidate is assessed against the same criteria</li><li>Anchored ratings reduce “gut feel” and halo effects</li><li>Independent scores before debrief prevent groupthink</li><li>Evidence notes make decisions explainable to candidates and founders</li><li>Data from scorecards improves the process over time</li></ul>
+      <h3 style="margin-top:12px">Non-negotiable</h3><p>No AI system makes or recommends a hire, rejection or ranking. Tools may organise evidence; people decide.</p></div>
+  </div>
+</section>
+
+<section class="slide" data-page="13">
+  <div class="eyebrow"><span class="n">07</span> Interview toolkit</div>
+  <h2 style="font-size:26px">Screening scorecard, questions and <span class="grad">hiring manager feedback form</span></h2>
+  <div class="g g3">
+    <div class="card"><h3>Initial screening scorecard</h3>
+      <table class="t" style="font-size:11.8px"><tbody>
+        <tr><td>Must-have skills</td><td>Met / Partly / Not met + evidence</td></tr>
+        <tr><td>Shipped work</td><td>Link or example verified</td></tr>
+        <tr><td>Ownership</td><td>What they personally drove</td></tr>
+        <tr><td>Motivation</td><td>Why ImagineArt, why now</td></tr>
+        <tr><td>Logistics</td><td>On-site Islamabad, notice, range</td></tr>
+        <tr><td>Open questions</td><td>For the technical interviewer</td></tr>
+      </tbody></table>
+      <h3 style="margin-top:12px">Culture &amp; collaboration</h3>
+      <p>Assessed against stated values — ownership, hunger to learn, shipping and fixing, transparency — not “culture fit” or similarity to the panel.</p></div>
+    <div class="card"><h3>Behavioural &amp; competency questions</h3>
+      <ul class="l small">
+        <li><b>Ownership:</b> Tell me about something you shipped that nobody asked you to build.</li>
+        <li><b>Learning:</b> What did you learn in the last 3 months that changed how you work?</li>
+        <li><b>Failure:</b> Describe a release that broke. What did you do in the first hour?</li>
+        <li><b>Trade-offs:</b> When did you choose speed over quality, and was it right?</li>
+        <li><b>Collaboration:</b> Tell me about a disagreement with a designer or PM and how it ended.</li>
+        <li><b>Transparency:</b> When did you raise a problem early that others hadn’t seen?</li>
+        <li><b>Growth:</b> Who have you helped get better at their job?</li>
+      </ul>
+      <p class="xs dim" style="margin-top:8px">Probe with STAR: situation, task, action, result — and “what would you do differently?”</p></div>
+    <div class="card"><h3>Hiring manager feedback form</h3>
+      <div class="mail" style="font-size:11.5px">
+        <div class="h">SUBMIT WITHIN 24 HOURS · BEFORE THE DEBRIEF</div>
+        <b>Competency assessed:</b> ____________<br>
+        <b>Rating (1–5):</b> ☐1 ☐2 ☐3 ☐4 ☐5<br>
+        <b>Evidence observed:</b> what the candidate said or did<br>
+        <b>Concerns / gaps:</b> specific, job-related<br>
+        <b>Questions for next round:</b> ____________<br>
+        <b>Recommendation:</b> ☐ Strong yes ☐ Yes ☐ No ☐ Strong no<br>
+        <b>Confidence:</b> ☐ High ☐ Medium ☐ Low
+      </div>
+      <h3 style="margin-top:12px">Work-sample coordination</h3>
+      <ul class="l small"><li>Time-boxed (≤ 4 hours) or paid if longer</li><li>Clear brief, rubric shared with reviewers in advance</li><li>Feedback to every candidate who submits</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ 08 AI ============ -->
+<section class="slide" id="ai" data-page="14">
+  <div class="eyebrow"><span class="n">08</span> AI-Powered Talent Acquisition</div>
+  <h2>AI-Enabled Talent Acquisition Copilot</h2>
+  <div class="proto" style="margin-bottom:16px">Illustrative Prototype – Developed as a practical demonstration of AI-enabled recruitment capabilities.</div>
+  <div class="flow" style="margin-bottom:14px">
+    <div class="fs"><b>Hiring requirement</b><span>Intake notes + draft JD</span></div><div class="ar">→</div>
+    <div class="fs ai"><b>AI role analysis</b><span>Competencies, must-have vs trainable, persona</span></div><div class="ar">→</div>
+    <div class="fs ai"><b>Sourcing strategy</b><span>Channels, Boolean, outreach drafts</span></div><div class="ar">→</div>
+    <div class="fs ai"><b>Screening support</b><span>Evidence extraction vs scorecard, open questions</span></div><div class="ar">→</div>
+    <div class="fs ai"><b>Structured evaluation</b><span>Interview kit, feedback consolidation</span></div><div class="ar">→</div>
+    <div class="fs human"><b>Human hiring decision</b><span>Panel + HM + founder</span></div><div class="ar">→</div>
+    <div class="fs"><b>Recruitment analytics</b><span>Funnel, sources, drop-off</span></div>
+  </div>
+  <div class="legend" style="margin-bottom:16px"><span><span class="sw" style="background:var(--violet)"></span>AI-assisted step — output is a draft</span><span><span class="sw" style="background:var(--green)"></span>Human decision point</span><span><span class="sw" style="background:var(--blue)"></span>Human review checkpoint after every AI step</span></div>
+  <div class="g g4">
+    <div class="card"><h4 style="color:var(--blue)">Checkpoint 1</h4><h3 style="margin:4px 0">Role analysis approved</h3><p>Hiring manager confirms competencies and must-haves before any sourcing.</p></div>
+    <div class="card"><h4 style="color:var(--blue)">Checkpoint 2</h4><h3 style="margin:4px 0">Outreach edited by recruiter</h3><p>No message is sent without a person reading and personalising it.</p></div>
+    <div class="card"><h4 style="color:var(--blue)">Checkpoint 3</h4><h3 style="margin:4px 0">Evidence verified</h3><p>Recruiter checks each extracted claim against the CV; AI gives no score or verdict.</p></div>
+    <div class="card"><h4 style="color:var(--blue)">Checkpoint 4</h4><h3 style="margin:4px 0">Decision by the panel</h3><p>Scorecards from interviewers; AI only summarises what they wrote.</p></div>
+  </div>
+  <div class="g g3" style="margin-top:14px">
+    <div class="card"><h3>What is working today</h3><p>A browser-based prototype using synthetic data: sample mode with pre-generated outputs, and a live mode that calls Claude with the user’s own API key.</p></div>
+    <div class="card"><h3>Prompt-based workflow</h3><p>The same prompts run in Claude or ChatGPT chat — copy, paste, review — with no integration required.</p></div>
+    <div class="card"><h3>Not built (yet)</h3><p>No ATS, LinkedIn, GitHub or Hugging Face integration, and no production automation. Those would follow a pilot and a privacy review.</p></div>
+  </div>
+</section>
+
+<section class="slide" data-page="15">
+  <div class="eyebrow"><span class="n">08</span> Copilot — prompts, inputs and outputs</div>
+  <h2 style="font-size:26px">From messy input to <span class="grad">structured, reviewable output</span></h2>
+  <div class="g" style="grid-template-columns:1fr 1fr">
+    <div>
+      <h4 style="margin-bottom:8px">Sample prompt — screening support</h4>
+      <div class="code"><span class="k">ROLE</span> You support a recruiter. You never decide, rank, score or recommend rejection.
+<span class="k">TASK</span> For each competency in &lt;scorecard&gt;, quote the exact CV evidence or write <span class="s">"No evidence found"</span>. Then list up to 3 questions the recruiter should ask to verify or fill gaps.
+<span class="k">RULES</span> Ignore name, gender, age, religion, nationality, photos, marital status and university prestige. Do not infer anything not written. Output JSON only.
+<span class="k">INPUT</span> &lt;scorecard&gt;…&lt;/scorecard&gt; &lt;cv redacted="true"&gt;…&lt;/cv&gt;</div>
+      <h4 style="margin:12px 0 8px">Other prompts in the library</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <span class="chip">JD → competencies</span><span class="chip">Must-have vs trainable</span><span class="chip">Candidate persona</span><span class="chip">Boolean generator</span><span class="chip">Channel plan</span><span class="chip">Outreach draft</span><span class="chip v">Interview kit</span><span class="chip v">Feedback consolidation</span><span class="chip v">Weekly hiring report</span><span class="chip v">Candidate update email</span>
+      </div>
+    </div>
+    <div>
+      <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:8px"><h4>Input → output example</h4><span class="illus">Synthetic candidate</span></div>
+      <div class="mail" style="margin-bottom:8px"><div class="h">INPUT — CV EXCERPT (REDACTED)</div>“Built an image-upscaling service in PyTorch serving ~40k requests/day; cut GPU cost by moving to fp16 and batching. Maintained a LoRA training repo (300★).”</div>
+      <div class="code"><span class="c">// OUTPUT — draft for recruiter review</span>
+{ <span class="s">"ML depth"</span>: { <span class="s">"evidence"</span>: <span class="s">"Built image-upscaling service in PyTorch; LoRA training repo"</span> },
+  <span class="s">"Inference optimisation"</span>: { <span class="s">"evidence"</span>: <span class="s">"fp16 and batching to cut GPU cost"</span> },
+  <span class="s">"Evaluation"</span>: { <span class="s">"evidence"</span>: <span class="s">"No evidence found"</span> },
+  <span class="s">"questions"</span>: [ <span class="s">"How did you measure upscaling quality?"</span>,
+    <span class="s">"What was your part vs the team's on the 40k req/day service?"</span>,
+    <span class="s">"Walk me through one LoRA training run end to end."</span> ] }</div>
+      <div class="row" style="margin-top:10px;align-items:center"><span class="chip g">Human review</span><span class="small muted">Recruiter verifies each quote, edits questions, then decides next step.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-page="16">
+  <div class="eyebrow"><span class="n">08</span> Responsible AI in hiring</div>
+  <h2 style="font-size:26px">Privacy, bias and limits — <span class="grad">designed in, not bolted on</span></h2>
+  <div class="g g4">
+    <div class="card"><div class="ico" style="margin-bottom:10px"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div><h3>Privacy &amp; data protection</h3><ul class="l small"><li>Redact names, contacts, photos before any AI step</li><li>Use company-approved AI accounts with data-retention controls — never personal accounts</li><li>Candidate consent and clear privacy notice</li><li>Align with ImagineArt’s GDPR and SOC 2 commitments and local law</li><li>Delete on request; defined retention period</li></ul></div>
+    <div class="card"><div class="ico" style="margin-bottom:10px"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0zM17 7l-3 7a3 3 0 006 0z"/></svg></div><h3>Bias mitigation</h3><ul class="l small"><li>Prompts exclude protected characteristics and school prestige</li><li>Evidence against job-related criteria only</li><li>No scores, rankings or rejection suggestions from AI</li><li>Monitor pass-through rates by stage and source</li><li>Periodic audit of AI-drafted JDs and outreach for biased language</li></ul></div>
+    <div class="card"><div class="ico" style="margin-bottom:10px"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg></div><h3>Limitations</h3><ul class="l small"><li>Can misread or invent details — every output is verified</li><li>Rewards keywords; misses potential and non-traditional paths</li><li>Cannot judge technical depth — engineers do</li><li>Knowledge may be outdated on markets and pay</li><li>Not a substitute for talking to the candidate</li></ul></div>
+    <div class="card hi"><div class="ico" style="margin-bottom:10px"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div><h3>Where AI helps most</h3><ul class="l small"><li>Turning intake notes into a clear scorecard</li><li>Search strings and channel ideas in minutes</li><li>Consistent screening summaries for every candidate</li><li>Interview kits mapped to competencies</li><li>Consolidating panel notes and weekly reports</li></ul></div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <div class="tw"><table class="t" style="font-size:12px">
+      <thead><tr><th>Maturity level</th><th>What it is</th><th>Status in this portfolio</th></tr></thead>
+      <tbody>
+        <tr><td>Prompt-based workflow</td><td>Reusable prompts run in Claude / ChatGPT, outputs reviewed by the recruiter</td><td><span class="chip g">Demonstrated</span></td></tr>
+        <tr><td>Working prototype</td><td>Browser app on synthetic data; optional live Claude calls with user’s own key</td><td><span class="chip g">Built — demonstration only</span></td></tr>
+        <tr><td>Production automation</td><td>Integrated with ATS / sourcing tools, logged, access-controlled, privacy-reviewed</td><td><span class="chip a">Proposed — not built</span></td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<!-- ============ 09 METRICS ============ -->
+<section class="slide" id="metrics" data-page="17">
+  <div class="eyebrow"><span class="n">09</span> Recruitment Metrics &amp; Analytics</div>
+  <h2 style="font-size:26px">Eleven metrics — <span class="grad">defined, calculated, used</span></h2>
+  <div class="tw"><table class="t" style="font-size:11.8px">
+    <thead><tr><th style="width:15%">Metric</th><th style="width:28%">Definition</th><th style="width:27%">Calculation</th><th style="width:30%">Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td>Time to Fill</td><td>Days from requisition approval to offer acceptance</td><td>Acceptance date − requisition approval date</td><td>Business cost of an empty seat; planning accuracy</td></tr>
+      <tr><td>Time to Hire</td><td>Days from candidate’s first contact to acceptance</td><td>Acceptance date − first contact / application date</td><td>Process speed seen by the candidate; drop-off risk</td></tr>
+      <tr><td>Source of Hire</td><td>Channel each hire came from</td><td>Hires per source ÷ total hires</td><td>Where to invest sourcing effort</td></tr>
+      <tr><td>Cost per Hire</td><td>Total recruiting spend per hire</td><td>(External + internal recruiting costs) ÷ hires</td><td>Budget efficiency; compare channels and agencies</td></tr>
+      <tr><td>Offer Acceptance Rate</td><td>Share of offers accepted</td><td>Offers accepted ÷ offers extended × 100</td><td>Quality of closing, compensation fit, employer brand</td></tr>
+      <tr><td>Interview-to-Offer</td><td>Interviewed candidates per offer</td><td>Candidates in final loop ÷ offers extended</td><td>Calibration between screening and the panel’s bar</td></tr>
+      <tr><td>Screening-to-Interview</td><td>Share of screened candidates advanced</td><td>Candidates to interview ÷ candidates screened × 100</td><td>Sourcing and screening precision</td></tr>
+      <tr><td>Candidate Drop-off</td><td>Candidates who withdraw or go silent, by stage</td><td>Withdrawals at stage ÷ entrants to stage × 100</td><td>Exposes slow or painful steps in the process</td></tr>
+      <tr><td>HM Satisfaction</td><td>Hiring manager rating of the search</td><td>Average post-hire survey score (1–5)</td><td>Partnership quality and recruiter effectiveness</td></tr>
+      <tr><td>Quality of Hire</td><td>Early performance and fit of new hires</td><td>Composite: 90-day manager rating, ramp-up, retention</td><td>The outcome hiring exists to deliver</td></tr>
+      <tr><td>Early Retention</td><td>New hires still employed after 90 / 180 days</td><td>Hires retained at day 90 ÷ hires in cohort × 100</td><td>Signals mis-selling, mis-hiring or weak onboarding</td></tr>
+    </tbody></table></div>
+</section>
+
+<section class="slide" data-page="18">
+  <div class="eyebrow"><span class="n">09</span> Recruitment dashboard concept</div>
+  <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:14px">
+    <h2 style="font-size:26px;margin:10px 0 0">Hiring health at a glance</h2>
+    <span class="illus">ILLUSTRATIVE DATA — not actual recruitment results</span>
+  </div>
+  <div class="g g5" style="margin-bottom:16px">
+    <div class="kpi"><div class="k">Time to fill (median)</div><div class="v">38 days</div><div class="d">Target ≤ 45</div></div>
+    <div class="kpi"><div class="k">Time to hire (median)</div><div class="v">21 days</div><div class="d">Target ≤ 25</div></div>
+    <div class="kpi"><div class="k">Offer acceptance</div><div class="v">82%</div><div class="d">9 of 11 offers</div></div>
+    <div class="kpi"><div class="k">HM satisfaction</div><div class="v">4.4 / 5</div><div class="d">7 searches surveyed</div></div>
+    <div class="kpi"><div class="k">90-day retention</div><div class="v">100%</div><div class="d">Previous-quarter cohort of 8 hires</div></div>
+  </div>
+  <div class="g" style="grid-template-columns:1.2fr 1fr 1fr">
+    <div class="card"><h3 style="margin-bottom:8px">Pipeline funnel · this quarter</h3>
+      <div class="bar"><span>Sourced / applied</span><div class="tr"><div class="fl" style="width:100%"></div></div><span class="val">420</span></div>
+      <div class="bar"><span>Screened</span><div class="tr"><div class="fl" style="width:38%"></div></div><span class="val">160</span></div>
+      <div class="bar"><span>Recruiter tech chat</span><div class="tr"><div class="fl" style="width:17%"></div></div><span class="val">72</span></div>
+      <div class="bar"><span>Work sample</span><div class="tr"><div class="fl" style="width:10%"></div></div><span class="val">41</span></div>
+      <div class="bar"><span>Final loop</span><div class="tr"><div class="fl" style="width:5.7%"></div></div><span class="val">24</span></div>
+      <div class="bar"><span>Offers</span><div class="tr"><div class="fl" style="width:2.6%"></div></div><span class="val">11</span></div>
+      <div class="bar"><span>Accepted</span><div class="tr"><div class="fl" style="width:2.1%"></div></div><span class="val">9</span></div>
+      <p class="xs dim" style="margin-top:6px">Screening-to-interview 45% · interview-to-offer 2.2 : 1</p></div>
+    <div class="card"><h3 style="margin-bottom:8px">Source of hire · share of 9 hires</h3>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>LinkedIn outbound</span><div class="tr"><div class="fl" style="width:33%"></div></div><span class="val">33%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>GitHub / HF</span><div class="tr"><div class="fl" style="width:22%"></div></div><span class="val">22%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>Referrals</span><div class="tr"><div class="fl" style="width:22%"></div></div><span class="val">22%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>Talent community</span><div class="tr"><div class="fl" style="width:11%"></div></div><span class="val">11%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>Inbound</span><div class="tr"><div class="fl" style="width:11%"></div></div><span class="val">11%</span></div></div>
+    <div class="card"><h3 style="margin-bottom:8px">Candidate drop-off by stage</h3>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>After screen</span><div class="tr"><div class="fl" style="width:12%"></div></div><span class="val">12%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>Before work sample</span><div class="tr"><div class="fl" style="width:24%;background:var(--violet)"></div></div><span class="val">24%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>During final loop</span><div class="tr"><div class="fl" style="width:8%"></div></div><span class="val">8%</span></div>
+      <div class="bar" style="grid-template-columns:110px 1fr 40px"><span>At offer</span><div class="tr"><div class="fl" style="width:18%"></div></div><span class="val">18%</span></div>
+      <p class="xs muted" style="margin-top:8px"><b style="color:#DCD0FF">Insight:</b> the work-sample step loses the most candidates → shorten to ≤ 3 hours or offer a paid option.</p></div>
+  </div>
+</section>
+
+<!-- ============ 10 CX ============ -->
+<section class="slide" id="cx" data-page="19">
+  <div class="eyebrow"><span class="n">10</span> Candidate Experience &amp; Employer Branding</div>
+  <h2 style="font-size:28px">Every touchpoint is <span class="grad">employer branding</span></h2>
+  <div class="flow" style="margin-bottom:16px">
+    <div class="fs"><b>Discover</b><span>Real team stories, build logs, transparent JDs</span></div><div class="ar">→</div>
+    <div class="fs"><b>Engage</b><span>Personal outreach; reply within 2 working days</span></div><div class="ar">→</div>
+    <div class="fs"><b>Interview</b><span>Stages and prep shared upfront; on-time panels</span></div><div class="ar">→</div>
+    <div class="fs"><b>Decision</b><span>Outcome within 5 working days; feedback offered</span></div><div class="ar">→</div>
+    <div class="fs"><b>Offer &amp; join</b><span>Live offer call; preboarding contact weekly</span></div><div class="ar">→</div>
+    <div class="fs human"><b>Advocate</b><span>Hires and rejected candidates both refer others</span></div>
+  </div>
+  <div class="g g3">
+    <div class="card"><h3>Employer value proposition</h3><p style="margin-bottom:6px">Built from ImagineArt’s public values and validated with the team:</p>
+      <ul class="l small"><li><b>Hunger over pedigree</b> — what you can do beats where you studied</li><li><b>Real ownership from week one</b> — ship product used worldwide</li><li><b>Growth follows impact</b> — careers that move as fast as the company</li><li><b>Frontier work from Islamabad</b> — own model, global customers</li></ul></div>
+    <div class="card"><h3>Recruitment marketing &amp; advocacy</h3><ul class="l small"><li>Monthly “what we shipped” posts written by engineers</li><li>Employee stories: from first role to owning a product area</li><li>Hiring-manager LinkedIn posts for each critical role</li><li>Referral programme with fast, visible feedback to referrers</li><li>Talks at universities, meetups and hackathons</li></ul></div>
+    <div class="card"><h3>Candidate experience standards</h3><ul class="l small"><li>Every application gets an answer — matching ImagineArt’s public promise</li><li>Interview guide sent 48 hours before each stage</li><li>No interview without a prepared panel</li><li>Specific feedback after a work sample</li><li>Candidate survey after every final decision</li></ul></div>
+  </div>
+</section>
+
+<section class="slide" data-page="20">
+  <div class="eyebrow"><span class="n">10</span> Candidate communication templates</div>
+  <h2 style="font-size:26px">Clear, warm, <span class="grad">specific</span></h2>
+  <div class="g g3">
+    <div class="mail"><div class="h">INTERVIEW INVITATION + PREPARATION</div>
+Hi [Name],<br><br>Thanks for the conversation on [day]. The team would like to meet you for a <b>60-minute technical interview</b> with [Interviewer, role] on [date/time options].<br><br><b>What to expect:</b> a walk-through of a project you’re proud of and a discussion of how you’d approach [topic]. No trick questions, and no whiteboard puzzles.<br><br><b>Next steps:</b> you’ll hear from me within 3 working days of the interview.<br><br>If you need any adjustment, just reply here.<br><br>[Your name]</div>
+    <div class="mail"><div class="h">DECISION — NOT PROCEEDING (WITH FEEDBACK)</div>
+Hi [Name],<br><br>Thank you for the time you put into the [take-home / interviews]. We’ve decided not to move forward for the [Role] position.<br><br><b>What stood out:</b> [specific strength].<br><b>Where the gap was for this role:</b> [specific, job-related gap].<br><br>This was a close decision, and I’d like to keep in touch for future roles — especially [related area]. If you’d like a short call to discuss the feedback, I’m happy to set one up.<br><br>Best,<br>[Your name]</div>
+    <div class="mail"><div class="h">PRE-JOINING ENGAGEMENT</div>
+Hi [Name],<br><br>We’re excited you’re joining on [date]! A few things to help you settle in:<br><br>• Your manager, [Name], will call you next week to talk through your first 30 days<br>• Your buddy is [Name] — they’ll reach out to say hello<br>• Your MacBook and accounts will be ready on day one<br>• Day one starts at [time] at NSTP, H-12 — I’ll meet you at reception<br><br>If anything changes with your notice period, please tell me early so we can plan together.<br><br>[Your name]</div>
+  </div>
+  <p class="note">Templates are personalised before sending; bracketed fields are never left generic.</p>
+</section>
+
+<!-- ============ 11 OFFER ============ -->
+<section class="slide" id="offer" data-page="21">
+  <div class="eyebrow"><span class="n">11</span> Offer Management &amp; Candidate Closing</div>
+  <h2 style="font-size:28px">Closing starts at <span class="grad">the first conversation</span></h2>
+  <div class="row" style="margin-bottom:6px;justify-content:flex-end"><span class="illus">Illustrative workflow</span></div>
+  <div class="flow" style="margin-bottom:16px">
+    <div class="fs"><b>1 · Align early</b><span>Range, motivators, notice and competing processes at screen</span></div><div class="ar">→</div>
+    <div class="fs"><b>2 · Pre-close</b><span>“If we offer X, what would stop you saying yes?”</span></div><div class="ar">→</div>
+    <div class="fs"><b>3 · Approve</b><span>Benchmark, internal equity, founder sign-off</span></div><div class="ar">→</div>
+    <div class="fs"><b>4 · Present live</b><span>Call first: role, growth, total rewards; letter after</span></div><div class="ar">→</div>
+    <div class="fs"><b>5 · Handle objections</b><span>Listen, clarify, escalate only what’s fair</span></div><div class="ar">→</div>
+    <div class="fs"><b>6 · Resign &amp; counteroffer</b><span>Prepare the candidate before they resign</span></div><div class="ar">→</div>
+    <div class="fs human"><b>7 · Confirm joining</b><span>Weekly contact through notice; day-one plan</span></div>
+  </div>
+  <div class="g" style="grid-template-columns:1.4fr 1fr">
+    <div class="card"><h3 style="margin-bottom:8px">Objection handling</h3>
+      <table class="t" style="font-size:12px"><thead><tr><th>Objection</th><th>Response approach</th></tr></thead><tbody>
+        <tr><td>“The salary is below my expectation”</td><td>Revisit their stated priorities; explain the full package and growth path; escalate only with market data and equity in mind</td></tr>
+        <tr><td>“My company made a counteroffer”</td><td>Return to why they started looking; most reasons for leaving remain after a raise; respect their decision</td></tr>
+        <tr><td>“A startup feels risky”</td><td>Share public facts (bootstrapped, $35M+ ARR, global customers) and let them talk to the team</td></tr>
+        <tr><td>“My notice period is 3 months”</td><td>Agree a realistic date; plan pre-joining engagement; consider buy-out only if policy allows</td></tr>
+        <tr><td>“I’m waiting on another offer”</td><td>Ask the timeline and decision criteria; move fast without pressure tactics</td></tr>
+      </tbody></table></div>
+    <div class="card hi"><h3>Closing principles</h3>
+      <ul class="l"><li>Sell honestly: the mission, the work and the growth — and the hard parts</li><li>Know the candidate’s top 3 motivators before an offer exists</li><li>No exploding offers or pressure tactics</li><li>Compensation benchmarked for engineering and research roles</li><li>Joining is the finish line — not the signature</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ 12 NINETY ============ -->
+<section class="slide" id="ninety" data-page="22">
+  <div class="eyebrow"><span class="n">12</span> From Hiring to the First 90 Days</div>
+  <h2 style="font-size:28px">Hiring isn’t done at the signature — <span class="grad">it’s done when people grow</span></h2>
+  <div class="g g5" style="margin-bottom:14px">
+    <div class="card"><h4 style="color:var(--blue)">Preboarding</h4><ul class="l small"><li>Weekly contact during notice</li><li>Manager intro call</li><li>Buddy assigned</li><li>Equipment &amp; accounts ready</li></ul></div>
+    <div class="card"><h4 style="color:var(--blue)">Day 1 – Week 1</h4><ul class="l small"><li>Welcome, team lunch</li><li>Product walk-through</li><li>Role scorecard shared</li><li>First small task shipped</li></ul></div>
+    <div class="card"><h4 style="color:var(--violet)">Day 30</h4><ul class="l small"><li>Role clarity confirmed</li><li>Manager 1:1 rhythm set</li><li>First deliverable done</li><li>TA check-in: “Is it what we promised?”</li></ul></div>
+    <div class="card"><h4 style="color:var(--violet)">Day 60</h4><ul class="l small"><li>Owns a scoped project</li><li>Early performance feedback</li><li>Engagement pulse</li><li>Gaps → learning plan</li></ul></div>
+    <div class="card"><h4 style="color:#C4B2FF">Day 90</h4><ul class="l small"><li>Manager quality-of-hire rating</li><li>Growth conversation</li><li>Retention risk review</li><li>Lessons fed back to hiring</li></ul></div>
+  </div>
+  <div class="g" style="grid-template-columns:1fr 1.25fr">
+    <div class="card"><h3 style="margin-bottom:8px">Early retention indicators</h3>
+      <div class="row small" style="margin:5px 0"><span class="chip g">Healthy</span><span class="muted">Shipping, asking questions, building relationships</span></div>
+      <div class="row small" style="margin:5px 0"><span class="chip a">Watch</span><span class="muted">Unclear priorities, few 1:1s, quiet in team channels</span></div>
+      <div class="row small" style="margin:5px 0"><span class="chip" style="background:rgba(255,138,138,.12);color:#FFC2C2;border-color:rgba(255,138,138,.35)">Act now</span><span class="muted">Role differs from what was sold; manager friction; outside interviews</span></div>
+      <p class="xs dim" style="margin-top:6px">Flag early when someone is stuck — or ready for more.</p></div>
+    <div class="card hi"><h3 style="margin-bottom:6px">Building careers, not just filling seats</h3>
+      <div class="g g3" style="gap:10px">
+        <div><b class="small">Career ladders</b><p class="xs">Clear levels for engineering, ML, product and design, with examples of impact at each level.</p></div>
+        <div><b class="small">Internal mobility</b><p class="xs">Open internal postings first; support moves like mobile → web product ownership.</p></div>
+        <div><b class="small">Early-career programmes</b><p class="xs">Internships, fellowships and student pipelines with mentors and real projects.</p></div>
+      </div></div>
+  </div>
+</section>
+
+<!-- ============ 13 CASES ============ -->
+<section class="slide" id="cases" data-page="23">
+  <div class="eyebrow"><span class="n">13</span> Practical Recruitment Case Studies</div>
+  <h2 style="font-size:26px">How I have run technical searches</h2>
+  <p class="lede" style="margin-bottom:10px">Anonymised process examples from my own roles. Candidate details, compensation and internal documents are not disclosed, and no outcome figures are claimed here.</p>
+  <div class="g g3">
+    <div class="card"><div class="row" style="justify-content:space-between"><h3>Network &amp; infrastructure roles</h3><span class="chip">CDigital</span></div>
+      <p class="xs dim" style="margin:2px 0 10px">Assistant Technical Project Manager – Networks · Junior Network Engineer</p>
+      <dl class="cs">
+        <dt>Requirement</dt><dd>Technical staff for network and infrastructure project delivery</dd>
+        <dt>Challenge</dt><dd>Balancing hands-on network skills with project coordination ability, from a limited local pool</dd>
+        <dt>My role</dt><dd>Developed and refined JDs, screened candidates, coordinated interviews and communication with hiring managers</dd>
+        <dt>Approach</dt><dd>Separated must-have technical skills from trainable ones with the hiring manager before screening</dd>
+        <dt>Execution</dt><dd>Structured screening, scheduled technical interviews, tracked candidates, managed follow-ups and offer communication</dd>
+        <dt>Outcome</dt><dd>Documented, repeatable process for technical roles</dd>
+        <dt>Learning</dt><dd>Early calibration with the hiring manager saves more time than any sourcing trick</dd>
+      </dl></div>
+    <div class="card"><div class="row" style="justify-content:space-between"><h3>Technical support roles</h3><span class="chip">CDigital</span></div>
+      <p class="xs dim" style="margin:2px 0 10px">Electrical Technician and related support positions</p>
+      <dl class="cs">
+        <dt>Requirement</dt><dd>Practical, hands-on technical staff for operations</dd>
+        <dt>Challenge</dt><dd>CVs say little about practical ability; skills must be checked in other ways</dd>
+        <dt>My role</dt><dd>Supported recruitment: screening, scheduling, candidate communication and onboarding coordination</dd>
+        <dt>Approach</dt><dd>Screening questions focused on real tasks performed, not titles</dd>
+        <dt>Execution</dt><dd>Coordinated practical evaluation with the technical lead; kept candidate records current</dd>
+        <dt>Outcome</dt><dd>Consistent candidate tracking and documentation</dd>
+        <dt>Learning</dt><dd>Work-based evidence beats CV keywords — the same principle applies to engineers</dd>
+      </dl></div>
+    <div class="card"><div class="row" style="justify-content:space-between"><h3>Niche IT hiring</h3><span class="chip v">Stella Technology</span></div>
+      <p class="xs dim" style="margin:2px 0 10px">Java, .NET, DevOps and Cloud profiles</p>
+      <dl class="cs">
+        <dt>Requirement</dt><dd>Hard-to-fill software and cloud engineering roles</dd>
+        <dt>Challenge</dt><dd>Competitive market; strong engineers rarely apply</dd>
+        <dt>My role</dt><dd>Talent Acquisition Specialist — sourcing to offer</dd>
+        <dt>Approach</dt><dd>Boolean sourcing, passive outreach, competency-based interviews, funnel reporting</dd>
+        <dt>Execution</dt><dd>Partnered with hiring managers on screening criteria; ran employer-branding activity on LinkedIn</dd>
+        <dt>Outcome</dt><dd>Repeatable pipeline for recurring technical roles</dd>
+        <dt>Learning</dt><dd>Engineers respond to outreach about the work, not the company</dd>
+      </dl></div>
+  </div>
+</section>
+
+<!-- ============ 14 OPMODEL ============ -->
+<section class="slide" id="opmodel" data-page="24">
+  <div class="eyebrow"><span class="n">14</span> My Recruitment Operating Model</div>
+  <h2 style="font-size:28px">A hiring engine that <span class="grad">scales with the company</span></h2>
+  <div class="g" style="grid-template-columns:1.35fr 1fr">
+    <div>
+      <div class="g g5" style="gap:10px">
+        <div class="card" style="padding:12px"><b class="small">1 · Requisition</b><p class="xs">Business case, level, budget, priority</p></div>
+        <div class="card" style="padding:12px"><b class="small">2 · Planning</b><p class="xs">Quarterly hiring plan by team</p></div>
+        <div class="card" style="padding:12px"><b class="small">3 · Intake</b><p class="xs">48-hour brief and scorecard</p></div>
+        <div class="card" style="padding:12px"><b class="small">4 · Pipeline</b><p class="xs">ATS stages, owners, SLAs</p></div>
+        <div class="card" style="padding:12px"><b class="small">5 · Interviews</b><p class="xs">Trained panels, fixed loops</p></div>
+        <div class="card" style="padding:12px"><b class="small">6 · Documentation</b><p class="xs">Templates, scorecards, audit trail</p></div>
+        <div class="card" style="padding:12px"><b class="small">7 · Offer approval</b><p class="xs">Bands, equity check, founder sign-off</p></div>
+        <div class="card" style="padding:12px"><b class="small">8 · Dashboard</b><p class="xs">Live funnel and SLAs</p></div>
+        <div class="card" style="padding:12px"><b class="small">9 · Weekly review</b><p class="xs">30 min with founders and leads</p></div>
+        <div class="card hi" style="padding:12px"><b class="small">10 · Improve</b><p class="xs">Retros, surveys, metric targets</p></div>
+      </div>
+      <div class="card" style="margin-top:12px"><h3 style="margin-bottom:6px">Weekly hiring review — 30 minutes</h3>
+        <div class="g g4" style="gap:8px"><span class="chip">Pipeline by role</span><span class="chip">Blocked stages</span><span class="chip v">Offers &amp; closes</span><span class="chip g">Decisions needed</span></div></div>
+    </div>
+    <div class="card hi"><h3 style="margin-bottom:8px">Speed × quality × business priority</h3>
+      <table class="t" style="font-size:12px"><thead><tr><th>Priority</th><th>Example</th><th>Target</th></tr></thead><tbody>
+        <tr><td>P0 — critical</td><td>Role blocking a launch or revenue</td><td>Shortlist in 7 days; daily updates</td></tr>
+        <tr><td>P1 — important</td><td>Planned team growth</td><td>Shortlist in 14 days; weekly review</td></tr>
+        <tr><td>P2 — pipeline</td><td>Future or opportunistic hires</td><td>Continuous; talent community</td></tr>
+      </tbody></table>
+      <p class="small muted" style="margin-top:10px">Speed never lowers the bar. When speed and quality conflict, I bring the trade-off to the hiring manager with data: widen the search, adjust the level, or accept a longer timeline.</p>
+      <p class="xs dim">Targets are illustrative and would be set with founders.</p></div>
+  </div>
+</section>
+
+<!-- ============ 15 PLAN ============ -->
+<section class="slide" id="plan" data-page="25">
+  <div class="eyebrow"><span class="n">15</span> My First 30 / 60 / 90 Days at ImagineArt</div>
+  <h2 style="font-size:28px">Understand, build, scale — <span class="grad">a proposed roadmap</span></h2>
+  <p class="lede" style="margin-bottom:14px">A starting hypothesis, not a commitment — it will be refined once I understand ImagineArt’s current processes, tools and priorities.</p>
+  <div class="g g3">
+    <div class="card"><div class="row" style="justify-content:space-between"><h3>Days 1–30</h3><span class="chip">Understand &amp; diagnose</span></div>
+      <ul class="l" style="margin-top:8px"><li>Learn company structure and hiring priorities</li><li>Meet founders and every hiring manager</li><li>Review current process, ATS (Ashby) set-up and templates</li><li>Identify urgent and recurring vacancies</li><li>Understand technical requirements per role</li><li>Review existing pipelines and the talent pool</li><li>Find bottlenecks; set baseline metrics</li></ul>
+      <p class="xs" style="margin-top:8px;color:#BFD0FF"><b>Deliverable:</b> hiring diagnostic + baseline dashboard</p></div>
+    <div class="card"><div class="row" style="justify-content:space-between"><h3>Days 31–60</h3><span class="chip v">Build &amp; improve</span></div>
+      <ul class="l" style="margin-top:8px"><li>Role-specific sourcing strategies</li><li>Talent maps for the hardest roles</li><li>Sharper screening frameworks</li><li>Structured interview scorecards</li><li>Pilot AI-assisted workflows with review checkpoints</li><li>Improve candidate communication</li><li>Weekly recruitment reporting</li></ul>
+      <p class="xs" style="margin-top:8px;color:#DCD0FF"><b>Deliverable:</b> scorecards live for priority roles + weekly report</p></div>
+    <div class="card"><div class="row" style="justify-content:space-between"><h3>Days 61–90</h3><span class="chip g">Scale &amp; optimise</span></div>
+      <ul class="l" style="margin-top:8px"><li>Strengthen pipelines for forecast roles</li><li>Improve source effectiveness</li><li>Evaluate hiring metrics against baseline</li><li>Improve offer conversion</li><li>Launch talent-community initiatives</li><li>Document a repeatable hiring playbook</li><li>Present recommendations to leadership</li></ul>
+      <p class="xs" style="margin-top:8px;color:#B5F2D3"><b>Deliverable:</b> 90-day review with leadership</p></div>
+  </div>
+</section>
+
+<!-- ============ 16 IDEA ============ -->
+<section class="slide" id="idea" data-page="26">
+  <div class="eyebrow"><span class="n">16</span> My Strategic Hiring Recommendation for ImagineArt</div>
+  <h2>ImagineArt <span class="grad">Builder Signal Network</span></h2>
+  <p class="lede" style="margin-bottom:14px">A proof-of-work talent community that finds emerging AI engineers, independent builders and product creators by what they build — before they ever apply. Presented as an idea to validate against what ImagineArt already runs (for example, its talent pool and Student Ambassador programme).</p>
+  <div class="g" style="grid-template-columns:1fr 1.5fr">
+    <div class="card"><h3>The business problem</h3>
+      <ul class="l"><li>The strongest AI builders are rarely job-hunting — and are visible through their work, not CVs</li><li>CVs are weak signals for people without traditional pedigree, yet the company values hunger over pedigree</li><li>Competition for AI talent is global; a local brand among builders compounds over time</li><li>Every role filled from a warm, proven community is faster and lower-risk</li></ul></div>
+    <div><h4 style="margin-bottom:8px">Components</h4>
+      <div class="g g4" style="gap:10px">
+        <div class="card" style="padding:12px"><b class="small">Monthly build challenges</b><p class="xs">Small, real problems using ImagineArt’s tools or APIs</p></div>
+        <div class="card" style="padding:12px"><b class="small">Project showcases</b><p class="xs">Builders demo work to engineers monthly</p></div>
+        <div class="card" style="padding:12px"><b class="small">University &amp; lab links</b><p class="xs">Research talks, thesis problems, fellowships</p></div>
+        <div class="card" style="padding:12px"><b class="small">Open-source discovery</b><p class="xs">Track contributors to relevant repos and models</p></div>
+        <div class="card" style="padding:12px"><b class="small">Hackathon partners</b><p class="xs">Sponsor, judge, follow up same week</p></div>
+        <div class="card" style="padding:12px"><b class="small">Opt-in community</b><p class="xs">Discord with explicit consent and clear rules</p></div>
+        <div class="card" style="padding:12px"><b class="small">Portfolio submissions</b><p class="xs">“Show us what you built” instead of a CV</p></div>
+        <div class="card hi" style="padding:12px"><b class="small">Work-based evaluation</b><p class="xs">Rubrics on shipped work; fast-track to interviews</p></div>
+      </div></div>
+  </div>
+</section>
+
+<section class="slide" data-page="27">
+  <div class="eyebrow"><span class="n">16</span> Builder Signal Network — pilot plan</div>
+  <h2 style="font-size:26px">A 90-day pilot, <span class="grad">measured like a product</span></h2>
+  <div class="g g3" style="margin-bottom:14px">
+    <div class="card"><h3>Execution</h3><ul class="l small"><li><b>Weeks 1–3:</b> validate with founders; audit existing community activity</li><li><b>Weeks 4–6:</b> first build challenge with 2 university labs + open call</li><li><b>Weeks 7–10:</b> showcase night; fast-track top builders to interviews</li><li><b>Weeks 11–13:</b> review results; decide to scale, change or stop</li></ul></div>
+    <div class="card"><h3>Resources</h3><ul class="l small"><li>TA lead (owner) — about 20% of time</li><li>Two engineers as judges — ~4 hours a month each</li><li>Small prize and API-credit budget</li><li>Existing Discord or a community tool; ATS tags for tracking</li></ul>
+      <h3 style="margin-top:10px">Candidate experience</h3><ul class="l small"><li>Short, fun, paid-in-credits challenges — never free labour on real roadmap work</li><li>Every submission gets feedback</li></ul></div>
+    <div class="card"><h3>Benefits</h3><ul class="l small"><li>Warm pipeline of proven builders for AI/ML, engineering and design</li><li>Evidence-based hiring for non-traditional talent</li><li>Stronger employer brand among Pakistan’s builder community</li><li>Product feedback from power users who build</li></ul></div>
+  </div>
+  <div class="g g2">
+    <div class="card hi"><h3 style="margin-bottom:8px">Success metrics</h3>
+      <div class="g g2" style="gap:8px"><span class="chip">Community members opted in</span><span class="chip">Submissions per challenge</span><span class="chip">Builders fast-tracked to interview</span><span class="chip">Hires from the network</span><span class="chip v">Interview-to-offer vs other sources</span><span class="chip v">Candidate NPS</span><span class="chip g">Cost per hire vs agency</span><span class="chip g">90-day quality of hire</span></div></div>
+    <div class="card"><h3 style="margin-bottom:6px">Risks &amp; limitations</h3><ul class="l small"><li>Engineer time is scarce → keep judging light and rotate</li><li>Bias toward people with free time → offer short, asynchronous formats</li><li>IP concerns → never use challenges for real product work</li><li>Community fatigue → quality over frequency; stop if it doesn’t convert</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ 17 CLOSING ============ -->
+<section class="slide cover" id="contact" style="grid-template-columns:1fr">
+  <div style="max-width:980px">
+    <div class="eyebrow"><span class="n">17</span> Closing</div>
+    <p class="quote" style="font-size:34px;line-height:1.25;margin:22px 0 28px">“Building high-performing teams starts with identifying exceptional people, understanding their potential, and creating <span class="grad">meaningful connections between talent and opportunity.</span>”</p>
+    <h3 style="font-size:28px">Arslan Khan</h3>
+    <p class="muted" style="margin:6px 0 2px">aPHRi™ | CHRP®</p>
+    <p class="muted" style="margin:0 0 22px">Talent Acquisition | HR Management | Recruitment Operations</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="pill" href="mailto:arxlankhanbangash@gmail.com">arxlankhanbangash@gmail.com</a>
+      <a class="pill" href="https://linkedin.com/in/arslan-khan-bangash-10a4b8b6">linkedin.com/in/arslan-khan-bangash-10a4b8b6</a>
+      <span class="pill">Islamabad, Pakistan</span>
+    </div>
+    <p class="note" style="margin-top:28px">Companion work sample: AI Talent Acquisition Copilot — working prototype on synthetic data, with README and demo walkthrough.</p>
+  </div>
+</section>
+
+</main>
+<footer class="site">© Arslan Khan · Talent Acquisition Portfolio · Illustrative data and synthetic examples are labelled throughout.</footer>
+</body>
+</html>
